@@ -1,0 +1,76 @@
+<div class="row">
+
+  <div class="col-sm-2 col-md-9 col-lg-16">
+    <div class="d-flex justify-content-center h-10">
+      <a id='link2' href="#">
+        <img src="/public/images.jpeg" width="200" height="100" class="rounded float-left" alt="Responsive image">
+      </a>
+      <div class="searchbar">
+        <input id='seach' class="search_input" type="text" value="{{seach}}" name="" placeholder="Search...">
+        <a id='link' href="#" class="search_icon"><i class="fas fa-search"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-1 col-md-1 col-lg-12">
+    <div id="text" class="container"></div>
+    <div class="list-group">
+      <div class="d-flex w-100 justify-content-between">
+        <p id='h' class="mb-4">Resultados para: {{seach}}</p>
+        <h5 id='hh'> Total: 100 buscas</h5>
+      </div>
+      {{#each datas}}
+
+      <div>
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+          <div id='linha' class="d-flex w-100 justify-content-between">
+            <h3 class="mb-4"> {{titulo}} </h3>
+            <small>3 days ago</small>
+          </div>
+          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+          </p>
+          <small>Donec id elit non mi porta.</small>
+        </a>
+      </div>
+      {{/each}}
+      </ul>
+      </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Get references to the input and link elements
+  var inputField = document.getElementById('seach');
+  var link = document.getElementById('link');
+  var link2 = document.getElementById('link2');
+
+  // Add an event listener to the input field
+  link.addEventListener('click', function () {
+    // Get the current value of the input field
+    var inputValue = inputField.value;
+    console.log(inputValue)
+    // Set the href attribute of the link to the input value
+    link.href = "/seach/" + inputValue;
+  });
+
+   link2.addEventListener('click', function () {
+    // Get the current value of the input field
+    var inputValue = inputField.value;
+    console.log(inputValue)
+    // Set the href attribute of the link to the input value
+    link2.href = "/seach/" + inputValue;
+  });
+
+  addEventListener('keyup', function () {
+    if (event.key === 'Enter' && inputField.value) {
+      // When the Enter key is pressed, trigger the click event on the link
+      link.click();
+      
+    }
+
+  });
+</script>

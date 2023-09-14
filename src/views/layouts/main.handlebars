@@ -1,0 +1,129 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+  rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous">
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Search</title>
+
+    <style>
+
+
+ .searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    border-color: #353b48;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+   
+    }
+
+    .searchbar:hover > .search_input{
+  
+    caret-color:re  d;
+    transition: width 0.4s linear;
+    font-weight: bold;
+    width: 450px;
+    padding: 0px 10px;
+   
+   
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+     padding: 0 10px;
+    }
+
+
+    .search_icon{
+    height: 45px;
+    width: 45px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
+
+
+  #text{
+    color: rgb(19, 1, 1);
+    border-color: #353b48;
+    background-color: whi;
+    width: 50%;
+    outline: 0;
+    width: 0;
+    margin-bottom: 20px;
+    transition: width 0.4s linear;
+    }
+
+    #linha{
+      color: blue;
+      font-family: "Arial", "Helvetica", sans-serif;
+      font-weight: bold;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    font-size: 20px;
+    caret-color:transparent;
+    line-height: 50px;
+    transition: width 0.4s linear;
+   
+   
+    }
+  #h{
+
+    font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+  }
+
+  #hh{
+     color: blue;
+  }
+
+  
+    </style>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/jquery/jquery.js"></script>
+  </head>
+  <body>
+    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+      <div class="container container-sm">
+        <a href="/seach" class="navbar-brand"> <strong>Recuperação de Informação</strong>
+        </a>
+
+      </div>
+    </div>
+    <div class="container">
+      {{{body}}}
+    </div>
+  </body>
+</html>
