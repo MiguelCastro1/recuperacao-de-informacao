@@ -48,8 +48,7 @@
       caret-color: re d;
       transition: width 0.4s linear;
       font-weight: bold;
-      width: 450px;
-      padding: 0px 10px;
+
 
 
     }
@@ -79,13 +78,20 @@
       border: 0;
       outline: 0;
       background: none;
-      width: 0;
+      width: 450px;
       font-size: 20px;
       caret-color: transparent;
       line-height: 50px;
       transition: width 0.4s linear;
-
-
+      padding: 0px 10px;
+      transform: translateY(-4px);
+    }
+    .text {
+      display: block;
+      width: 1000px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
   </style>
 
