@@ -1,9 +1,9 @@
-
 import express from "express";
 import router from "./src/router/router";
 import { engine } from "express-handlebars";
 
 const app = express();
+
 
 
 app.engine('handlebars', engine({
@@ -27,7 +27,7 @@ app.use("/js", [
 
 app.use(router);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3003;
 app.listen(PORT, () => {
   console.log(`Servidor Express está rodando na porta ${PORT}`);
 });
