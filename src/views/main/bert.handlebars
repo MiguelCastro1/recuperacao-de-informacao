@@ -7,7 +7,7 @@
             <img src="/public/images.jpeg" width="200" height="100" class="rounded float-left" alt="Responsive image">
           </a>
           <div class="searchbar">
-            <input id='seach' class="search_input" type="text" value="{{seach}}" name="" placeholder="Pesquisar ...">
+            <input id='seach' class="search_input" type="text" value="{{seach}}" name="" placeholder="Pesquisar com Bert...">
             <a id='link' href="#" class="search_icon"><i class="fas fa-search"></i></a>
           </div>
         </div>
@@ -96,7 +96,7 @@
     // Get the current value of the input field
     var inputValue = inputField.value;
     // Set the href attribute of the link to the input value
-    link.href = "/seach/" + inputValue;
+    link.href = "/bert/" + inputValue;
   });
 
   link2.addEventListener('click', function () {
@@ -104,7 +104,7 @@
     var inputValue = inputField.value;
     console.log(inputValue)
     // Set the href attribute of the link to the input value
-    link2.href = "/seach/" + inputValue;
+    link2.href = "/bert/" + inputValue;
   });
 
   inputField.addEventListener('keyup', function (event) {
